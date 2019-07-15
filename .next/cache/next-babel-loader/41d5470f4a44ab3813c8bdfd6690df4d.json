@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from 'react';\nimport './CSS/global/main.css';\nimport Layout from './Components/Layout';\n\nvar App = function App(props) {\n  return React.createElement(\"div\", null, React.createElement(Layout, null, props.children));\n};\n\nexport default App;","map":null,"metadata":{},"sourceType":"module"}

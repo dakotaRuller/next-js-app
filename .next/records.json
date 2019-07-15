@@ -1,0 +1,92 @@
+{
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!src/CSS/global/main.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!src/CSS/components/PostGenerator.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!src/CSS/components/Navbar.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "css node_modules/css-loader/index.js??ref--5-1!src/CSS/global/main.css 0": 0,
+      "css node_modules/css-loader/index.js??ref--5-1!src/CSS/global/main.css 1": 1,
+      "css node_modules/css-loader/index.js??ref--5-1!src/CSS/components/Navbar.css 0": 2,
+      "css node_modules/css-loader/index.js??ref--5-1!src/CSS/components/PostGenerator.css 0": 3
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    }
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "static/runtime/main.js": 2,
+      "static/wICfZL5o6kgilqM5ne075/pages/_app.js": 3,
+      "static/wICfZL5o6kgilqM5ne075/pages/_error.js": 4,
+      "static/wICfZL5o6kgilqM5ne075/pages/about.js": 5,
+      "static/wICfZL5o6kgilqM5ne075/pages/index.js": 6,
+      "static/wICfZL5o6kgilqM5ne075/pages/posts.js": 7,
+      "styles": 8
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}

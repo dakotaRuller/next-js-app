@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1618,8 +1618,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! isomorphic-fetch */ "isomorphic-fetch");
+/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(isomorphic_fetch__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _CSS_components_PostGenerator_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../CSS/components/PostGenerator.css */ "./src/CSS/components/PostGenerator.css");
 /* harmony import */ var _CSS_components_PostGenerator_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_CSS_components_PostGenerator_css__WEBPACK_IMPORTED_MODULE_9__);
 
@@ -1707,12 +1707,10 @@ function (_Component) {
       var _this2 = this;
 
       var randomIndex = Math.floor(Math.random() * 100);
-      isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_8___default()("https://jsonplaceholder.typicode.com/posts/".concat(randomIndex)).then(function (res) {
+      isomorphic_fetch__WEBPACK_IMPORTED_MODULE_8___default()("https://jsonplaceholder.typicode.com/posts/".concat(randomIndex)).then(function (res) {
         return res.json();
       }).then(function (data) {
-        console.log(data);
-
-        _this2.setState({
+        return _this2.setState({
           posts: [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_this2.state.posts), [data])
         });
       })["catch"](function (err) {
@@ -1726,14 +1724,14 @@ function (_Component) {
         className: "post-generator",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 35
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "post-creator",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 36
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
@@ -1741,21 +1739,21 @@ function (_Component) {
         onClick: this.generatePost,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 37
         },
         __self: this
       }, "Add Post"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("hr", {
         className: "splitter",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 38
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         className: "posts",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 40
         },
         __self: this
       }, this.state.posts.map(function (i) {
@@ -1765,7 +1763,7 @@ function (_Component) {
           key: i.id,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 45
+            lineNumber: 42
           },
           __self: this
         });
@@ -1780,7 +1778,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/posts.js ***!
   \******************************/
@@ -1935,14 +1933,14 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 
 /***/ }),
 
-/***/ "isomorphic-unfetch":
-/*!*************************************!*\
-  !*** external "isomorphic-unfetch" ***!
-  \*************************************/
+/***/ "isomorphic-fetch":
+/*!***********************************!*\
+  !*** external "isomorphic-fetch" ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("isomorphic-unfetch");
+module.exports = require("isomorphic-fetch");
 
 /***/ }),
 

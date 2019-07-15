@@ -1,5 +1,5 @@
 import App from '../src/App';
-import fetch from 'isomorphic-unfetch';
+import fetch from 'isomorphic-fetch';
 
 const Index = props => {
   return (

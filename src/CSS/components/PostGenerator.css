@@ -14,6 +14,7 @@ div.post-creator {
 }
 
 button {
+  opacity: 0.8;
   border: 1px solid #000;
   border-radius: 5px;
 }
@@ -23,15 +24,20 @@ button.generate-btn {
   padding: 10px 20px;
   font-size: 20px;
   font-weight: 200;
-  opacity: 0.8;
   transition: all 0.5s;
 }
 
-button.generate-btn:focus {
+button:focus {
   outline: none;
 }
-button.generate-btn:hover {
+
+button:active {
   opacity: 1;
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+
+button.generate-btn:hover, button.post-comment-btn:hover {
   color: #fff;
   background-color: #000;
   transition: all 0.5s;
@@ -48,10 +54,16 @@ hr.splitter {
 button.post-comment-btn, button.post-like-btn {
   margin: 5px 10px;
   padding: 2px 10px;
-  font-size: 16px;
+  font-size: 16px;  transition: all 0.5s;
 }
 
 button.post-like-btn {
- border-color: #477aff;
+  border-color: #477aff;
   color: #477aff;
+}
+
+button.post-like-btn:hover {
+  background-color: #477aff;
+  color: #fff;
+  transition: all 0.5s;
 }

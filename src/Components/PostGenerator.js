@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import fetch from 'isomorphic-unfetch';
+import fetch from 'isomorphic-fetch';
 import '../CSS/components/PostGenerator.css';
 
 const PostComponent = ({title, body, key}) => (
@@ -25,10 +25,7 @@ class PostGenerator extends Component {
     let randomIndex = Math.floor(Math.random() * 100);
     fetch(`https://jsonplaceholder.typicode.com/posts/${randomIndex}`)
       .then(res => res.json())
-      .then(data => {
-        console.log(data);
-        this.setState({posts: [...this.state.posts, data]});
-      })
+      .then(data => this.setState({posts: [...this.state.posts, data]}))
       .catch(err => console.log(err));
 
 
