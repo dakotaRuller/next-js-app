@@ -1,6 +1,6 @@
 import App from '../src/App';
 
-function Base() {
+function About() {
   return (
     <div>
       <App>
@@ -11,4 +11,4 @@ function Base() {
   )
 }
 
-export default Base;
+export default About;

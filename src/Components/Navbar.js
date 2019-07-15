@@ -9,6 +9,7 @@ class Navbar extends Component {
         <ul className={"navbar-list"}>
           <li className={"navbar-list-item"}><Link href='/'><a>Home</a></Link></li>
           <li className={"navbar-list-item"}><Link href='/about'><a>About</a></Link></li>
+          <li className={"navbar-list-item"}><Link href='/posts'><a>Posts</a></Link></li>
         </ul>
       </div>
     );
