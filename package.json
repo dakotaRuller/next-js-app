@@ -2,18 +2,18 @@
   "name": "next-js",
   "version": "1.0.0",
   "description": "next.js setup tutorial",
-  "main": "index.js",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT",
+    "postinstall": "next build"
   },
   "author": "DR",
   "license": "ISC",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "isomorphic-fetch": "^2.2.1",
-    "next": "^9.0.1",
+    "next": "^9.0.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "redux": "^4.0.4"
